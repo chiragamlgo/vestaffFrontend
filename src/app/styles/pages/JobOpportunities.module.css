@@ -1,0 +1,35 @@
+.jobInfo{
+    width: 100%;
+}
+
+.jobHeroContainer{
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jobImage{
+    width: 100%;
+}
+
+.jobImage img{
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+}
+
+.jobInfoContent{
+    width: 100%;
+}
+.jobInfoContent h1{
+    font-size: 3rem;
+    padding-block: 20px;
+}
+
+.jobInfoContent p{
+    font-size: 1.5rem;
+    padding-block: 20px;
+}

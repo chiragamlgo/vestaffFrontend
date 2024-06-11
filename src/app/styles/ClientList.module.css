@@ -1,0 +1,74 @@
+.clientContainer {
+    width: 100%;
+    background-color: var(--bg-dark);
+    color: white;
+  }
+  
+  .clientContent {
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    padding-block: 30px;
+    padding-inline: 40px;
+  }
+  
+  .clientContent h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+  }
+  
+  .clientImages {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    align-items: center;
+    justify-content: space-evenly;
+    padding-block: 40px;
+  }
+  
+  .clientImages img {
+    width: 150px;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .clientContent {
+      padding-inline: 20px; /* Decreased padding for smaller screens */
+    }
+
+    .clientContent h3{
+      text-align: center;
+    }
+  
+    .clientImages {
+      flex-direction: column;
+      padding-block: 20px; /* Decreased padding for smaller screens */
+    }
+  
+    .clientImages img {
+      width: 50%; /* Decrease image size for smaller screens */
+    }
+  }
+  
+  /* Media query for even smaller screens, like mobile phones */
+  @media (max-width: 480px) {
+    .clientContent {
+      padding-inline: 20px; /* Further decreased padding for smaller screens */
+    }
+  
+    .clientContent h3{
+      text-align: center;
+    }
+    
+    .clientImages {
+      flex-direction: column;
+      padding-block: 10px; /* Further decreased padding for smaller screens */
+    }
+  
+    .clientImages img {
+      width: 30%; /* Further decrease image size for very small screens */
+    }
+  }
+  

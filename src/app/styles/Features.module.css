@@ -1,0 +1,152 @@
+.featuresContainer{
+    width: 100%;
+    background-color: #e9f3ff;
+}
+
+.features{
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    padding-block: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.contentLeft{
+    max-width: 740px;
+    width: 100%;
+}
+
+.contentLeft h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.contentLeft h2{
+    font-size: 2rem;
+}
+
+.contentRight{
+    max-width: 540px;
+    width: 100%;
+}
+
+.contentRight p{
+    font-size: 1.3rem;
+    padding-block: 20px;
+}
+
+.contentRight button{
+    background: transparent;
+    background-color: var(--bg-dark);
+    color: white;
+    padding-block: 10px;
+    padding-inline: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.cards{
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    padding-block: 70px;
+    padding-inline: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.flipCard {
+    width: 400px;
+    height: 300px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+  
+  .flipCardInner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .flipCard:hover .flipCardInner {
+    transform: rotateY(180deg);
+  }
+  
+  .flipCardFront, .flipCardBack {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .flipCardFront {
+    background-color: #fff;
+    color: black;
+    padding: 40px;
+    line-height: 2rem;
+  }
+  
+  .flipCardBack {
+    background-color: var(--bg-dark);
+    color: white;
+    transform: rotateY(180deg);
+    padding: 40px;
+  }
+
+  .flipCardFront img{
+    object-fit: contain;
+  }
+
+  .flipCardFront h2{
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .flipCardBack button{
+    margin-top: 20px;
+    background: transparent;
+    background-color: #fff;
+    color: var(--bg-dark);
+    border: none;
+    border-radius: 10px;
+    padding-block: 10px;
+    padding-inline: 15px;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        gap: 2rem;
+        padding-inline: 20px;
+    }
+
+    .contentLeft,
+    .contentRight {
+        text-align: center;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .flipCard {
+        width: 100%;
+        max-width: 300px;
+        /* margin-bottom: 2rem; */
+    }
+
+    .flipCardFront h2{
+      font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,85 @@
+.aboutUs {
+    width: 100%;
+    /* color: var(--color-white); */
+    background-color: var(--bg-dark);
+    padding-block: 20px;
+}
+
+.aboutHero {
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 90vh;
+    height: 100%;
+    background-color: var(--bg-dark);
+    color: var(--color-white);
+}
+
+.aboutHero h1 {
+    font-size: 3rem;
+    padding-block: 20px;
+}
+
+.aboutHero h1 span {
+    color: var(--color-blue);
+}
+
+.aboutHero p {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-block: 20px;
+}
+
+.aboutHero span {
+    color: var(--color-blue);
+}
+
+.aboutHero button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+    background-color: #2e6edf;
+    border: none;
+    border-radius: 10px;
+}
+
+.vision {
+    width: 100%;
+    background-color: var(--color-white);
+    color: var(--bg-dark);
+}
+
+.visionContent {
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-block: 40px;
+}
+
+.visionRight img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+.visionLeft h2{
+    font-size: 3rem;
+    padding-block: 10px;
+    /* color: var(--color-blue); */
+}
+.visionLeft{
+    max-width: 540px;
+}
+
+.visionLeft p{
+    font-size: 1.3rem
+}

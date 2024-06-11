@@ -1,0 +1,50 @@
+.invitationContainer {
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+  }
+  
+  .image {
+    width: 100%;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .forms {
+    width: 100%;
+    padding-block: 20px;
+    padding-inline: 40px;
+  }
+  
+  .forms h2 {
+    font-size: 2.5rem;
+    padding-block: 5px;
+  }
+  
+  .state {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 20px;
+  }
+  
+  .state button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: none;
+  }
+  
+  .activeButton {
+    background-color: var(--bg-dark) !important;
+    color: var(--color-white) !important;
+  }
+  

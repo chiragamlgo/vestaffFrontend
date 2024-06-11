@@ -1,0 +1,67 @@
+.workingContainer {
+    width: 100%;
+    background-color: #0c0c16;
+  }
+  
+  .workingContent {
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    padding-block: 40px;
+    padding-inline: 20px;
+  }
+  
+  .workingContent h1 {
+    color: #fff;
+    font-size: 2rem;
+    padding-block: 30px;
+    text-align: center; /* Center heading */
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .stepCard {
+    flex: 1;
+    min-width: 200px; /* Ensure cards are not too narrow */
+    max-width: 400px; /* Limit card width */
+    height: 400px;
+    background-color: #e9f3ff;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    padding-block: 20px;
+    padding-inline: 20px;
+  }
+  
+  .stepCard img {
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .stepCard p {
+    background-color: #0c0c16;
+    padding-block: 5px;
+    padding-inline: 7px;
+    width: fit-content;
+    color: #fff;
+    margin-block: 5px;
+    border-radius: 10px;
+  }
+  
+  /* Style adjustments for the first step card */
+  .firstStepCard {
+    background-color: #fff;
+    width: 100%; /* Set width to 100% */
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .cards {
+      justify-content: center; /* Center cards on smaller screens */
+    }
+  }
+  

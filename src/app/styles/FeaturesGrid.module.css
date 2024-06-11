@@ -1,0 +1,38 @@
+.gridContainer{
+    width: 100%;
+    background-color: #0f0f0f;
+    color: #fff;
+    padding-block: 40px;
+}
+
+.gridContainer h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.gridContainer h2 span{
+    color: #317eff;
+}
+
+.featuresGrid{
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    display: grid;
+   grid-template-columns: auto auto auto;
+    grid-gap: 2rem;
+    padding-block: 20px;
+}
+
+.gridItem{
+    height: 200px;
+    width: 200px;
+    background-color: #fff;
+    color: red;
+}
+
+.item1{
+    background-color: #317eff;
+}
+
+

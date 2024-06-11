@@ -1,0 +1,147 @@
+.footerContainer {
+    width: 100%;
+    background-color: var(--bg-dark);
+    color: #fff;
+}
+
+.footerContent {
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    padding-block: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
+    border-top: 2px solid gray;
+}
+
+.footerGridItem {
+    /* flex: 1 1 200px; */
+    margin: 10px;
+}
+
+.footerGridItem img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.links {
+    color: #fff;
+}
+
+.links h3 {
+    font-size: 1.5rem;
+    padding-block: 5px;
+    border-bottom: 1px solid gray;
+}
+
+.links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 3rem;
+}
+
+.socialsContent {
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    padding-block: 20px;
+    padding-inline: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+.socialsLeft, .socialsRight {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.socialsRight {
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+
+.socialsLeft a, .socialsRight a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.copyright {
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    padding-block: 20px;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .footerContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerGridItem {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .socialsContent {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .socialsLeft, .socialsRight {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .socialsRight {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .links h3 {
+        font-size: 1.2rem;
+    }
+
+    .links a {
+        font-size: 0.9rem;
+        line-height: 2.5rem;
+    }
+
+    .socialsLeft, .socialsRight {
+        gap: 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .links h3 {
+        font-size: 1rem;
+    }
+
+    .links a {
+        font-size: 0.8rem;
+        line-height: 2rem;
+    }
+
+    .socialsLeft {
+        flex-direction: column; 
+         gap: 1rem;
+    }
+
+    .socialsRight{
+        gap: 3rem;
+    }
+}

@@ -1,0 +1,89 @@
+.mainContainer {
+    width: 100%;
+    background-color: var(--bg-dark);
+    color: var(--color-white);
+}
+
+.stepsContainer {
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-inline: 20px;
+    padding-block: 40px;
+    min-height: 80vh;
+    height: 100%;
+}
+
+.leftContent {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.leftContent h2{
+    font-size: 3rem;
+}
+
+.leftContent h2 span{
+    color: blue;
+}
+
+.verticalSteps {
+    max-width: 540px;
+    position: relative;
+}
+
+.steps {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.steps:last-child {
+    margin-bottom: 0;
+}
+
+.steps h3{
+    font-size: 2rem;
+}
+
+.icon {
+    font-size: 2rem;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.steps::before {
+    content: '';
+    position: absolute;
+    left: 1.2rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    /* background: #fff; */
+}
+
+.steps:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 2.5rem;
+    top: 3rem;
+    bottom: -2rem;
+    width: 1px;
+    background: #fff;
+}
+
+/* .cta{
+    padding-inline: 20px;
+    padding-block: 40px;
+}
+
+.cta button{
+    margin-top: 1.5rem;
+} */

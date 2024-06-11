@@ -1,0 +1,47 @@
+.topHeader{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #766068;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 10px;
+    padding-inline: 20px;
+}
+
+.topHeader h4{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.topHeader h4 span{
+    color: #766068;
+}
+
+.contact, .info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-right: 1px solid #766068;
+}
+
+.info>a{
+    text-decoration: none;
+    color: #ff5956;
+    font-weight: bold;
+}
+
+.info>a:hover{
+    color: #766068;
+}
+
+.socials{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+

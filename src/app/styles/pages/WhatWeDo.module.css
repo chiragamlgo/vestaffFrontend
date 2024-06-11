@@ -1,0 +1,318 @@
+/* .description{
+    width: 100%;
+    background-color: var(--bg-dark);
+}
+
+.descriptionHero{
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    color: var(--color-white);
+    min-height: 70vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.descriptionLeft{
+    max-width: 640px;
+    width: 100%;
+}
+
+.descriptionLeft h4{
+    font-size: 1.3rem;
+    padding-block: 5px;
+    font-weight: 300;
+}
+
+.descriptionLeft h2{
+    padding-block: 5px;
+    font-size: 3rem;
+}
+
+.descriptionLeft p{
+    font-size: 1.4rem;
+    padding-block: 5px;
+}
+
+.descriptionLeft button{
+    margin-top: 20px;
+    padding: 10px 20px; 
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+    background-color: #2e6edf;
+    border: none;
+    border-radius: 10px;
+}
+
+.descriptionRight img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.information{
+    width: 100%;
+    background-color: var(--color-white);
+    color: var(--bg-dark);
+}
+
+.informationContent{
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 40px;
+}
+
+.informationRight img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.informationLeft h2{
+    font-size: 3rem;
+    padding-block: 10px;
+}
+.informationLeft{
+    max-width: 540px;
+}
+
+.informationLeft p{
+    font-size: 1.3rem;
+    padding-block: 10px;
+    
+}
+
+.documentation{
+    width: 100%;
+    background-color: #2038b4;
+    color: var(--color-white);
+}
+
+.documentationContent{
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 40px;
+}
+
+.talentSkill{
+    width: 100%;
+    background-color: beige;
+    color: var(--bg-dark);
+}
+
+.skillContainer{
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    padding-block: 40px;
+    padding-inline: 20px;
+}
+
+.heading h2{
+    font-size: 3rem;
+}
+
+.skillListContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+} */
+
+.description {
+    width: 100%;
+    /* background-color: var(--bg-dark); */
+}
+
+.descriptionHero {
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    /* color: var(--color-white); */
+    min-height: 70vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.descriptionLeft {
+    max-width: 640px;
+    width: 100%;
+}
+
+.descriptionLeft h4 {
+    font-size: 1.3rem;
+    padding-block: 5px;
+    font-weight: 300;
+}
+
+.descriptionLeft h2 {
+    padding-block: 5px;
+    font-size: 3rem;
+}
+
+.descriptionLeft p {
+    font-size: 1.4rem;
+    padding-block: 5px;
+}
+
+.descriptionLeft button {
+    margin-top: 20px;
+    padding: 10px 20px; /* Simplified padding for both directions */
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+    background-color: #2e6edf;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; /* Add a pointer cursor for better UX */
+}
+
+.descriptionLeft button:hover {
+    background-color: #1a4eb8; /* Add a hover effect for better UX */
+}
+
+.descriptionRight img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.information {
+    width: 100%;
+    background-color: var(--color-white);
+    color: var(--bg-dark);
+}
+
+.informationContent {
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 40px;
+}
+
+.informationRight img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.informationLeft h2 {
+    font-size: 3rem;
+    padding-block: 10px;
+}
+
+.informationLeft {
+    max-width: 540px;
+}
+
+.informationLeft p {
+    font-size: 1.3rem;
+    padding-block: 10px;
+}
+
+.documentation {
+    width: 100%;
+    background-color: #2038b4;
+    color: var(--color-white);
+}
+
+.documentationContent {
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 40px;
+}
+
+.talentSkill {
+    width: 100%;
+    background-color: #ededed;
+    color: var(--bg-dark);
+}
+
+.skillContainer {
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    padding-block: 40px;
+    padding-inline: 20px;
+}
+
+.heading h2 {
+    font-size: 3rem;
+}
+
+.skillListContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px; /* Add space between the columns */
+    padding-block: 40px;
+}
+
+.skills, .roles, .seniority {
+    width: 30%;
+    max-height: 800px; /* Fixed height for the scrollable container */
+    overflow-y: hidden;
+    background-color: white; /* Ensure the background color contrasts with the text */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for better visibility */
+}
+
+.skills h1, .roles h1, .seniority h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.skills p, .roles p, .seniority p {
+    font-size: 1rem;
+    padding: 5px 0;
+    border-bottom: 1px solid #e0e0e0; /* Add a divider between items */
+}
+
+.skills p:last-child, .roles p:last-child, .seniority p:last-child {
+    border-bottom: none; /* Remove the divider for the last item */
+}
+
+/* Add styles for infinite scroll loader and end message */
+.infinite-scroll-component__outerdiv {
+    position: relative;
+}
+
+.infinite-scroll-component__loader {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.infinite-scroll-component__end-message {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #888;
+}

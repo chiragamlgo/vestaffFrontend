@@ -1,0 +1,74 @@
+.numberData {
+    width: 100%;
+    background-color: #e9f3ff;
+}
+
+.content {
+    max-width: 1240px;
+    width: 100%;
+    margin-inline: auto;
+    padding-block: 40px;
+    padding-inline: 40px;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding-block: 20px;
+}
+
+.content h2 span {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.content p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-block: 20px;
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to next line on smaller screens */
+    justify-content: space-between;
+    padding-block: 20px;
+}
+
+.numbers div {
+    flex-basis: calc(33.33% - 20px); /* Adjust width to fit three items per row */
+    margin-bottom: 20px;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .content {
+        padding-inline: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .content h2 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .content h2 span {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .content p {
+        font-size: 1.1rem; /* Adjust font size for smaller screens */
+    }
+
+    .numbers div {
+        flex-basis: calc(50% - 20px); /* Adjust width to fit two items per row */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .content {
+        padding-inline: 20px; /* Adjust padding for smaller screens */
+    }
+    
+    .numbers div {
+        flex-basis: 100%; /* Display one item per row for smaller screens */
+    }
+}

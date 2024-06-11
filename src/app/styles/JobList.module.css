@@ -1,0 +1,202 @@
+.container {
+  padding: 40px 20px;
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+.jobListContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.scrollContainer {
+  border: 1px solid #ddd;
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+  height: 80vh;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 0 0 100%; /* Make job div take full width within the scroll container */
+  display: flex;
+  flex-direction: column;
+}
+
+.job:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.selectedJob {
+  border-left: 5px solid #1e90ff;
+  box-shadow: 0 4px 8px rgba(30, 144, 255, 0.2);
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.jobTitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.upperDescription {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.descContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.jobCompany,
+.jobLocation,
+.jobIndustry,
+.jobTeamSize,
+.jobSkills {
+  font-size: 1rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.jobCompany svg,
+.jobLocation svg,
+.jobIndustry svg,
+.jobTeamSize svg,
+.jobSkills svg {
+  margin-right: 8px;
+}
+
+.jobLink {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1em;
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.jobLink:hover {
+  text-decoration: underline;
+}
+
+.loader {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.endMessage {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.jobDetail {
+  border: 1px solid #ddd;
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+  height: 80vh; /* Define a fixed height */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.completeDesc{
+  padding-block: 20px;
+}
+
+
+.jobDescription {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.jobResponsibilities {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  padding-inline: 20px;
+}
+
+.features{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-block: 10px;
+  padding-inline: 20px;
+}
+
+.features h2{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.features>p{
+  text-align: center;
+  font-size: 1rem;
+  padding-block: 5px;
+}
+
+
+.steps{
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-block: 15px;
+  gap: 2rem;
+}
+
+.step{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.step>p:first-child{
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  padding-block: 5px;
+  padding-inline: 10px;
+  border-radius: 50%;
+}
+
+.step h3{
+  padding-block: 5px;
+}
